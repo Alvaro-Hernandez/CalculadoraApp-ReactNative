@@ -1,15 +1,15 @@
 import React from 'react';
 //import Perro from './src/componentes/PerroComponent';
 //import Cachorro from './src/componentes/CachorroComponent';
-//import Calculadora from './src/componentes/Calculadora';
-const Animal = () => {
+import Calculadora from './src/componentes/Calculadora';
+const App = () => {
   return (
     <>
       {/* <Perro nombre={'Paco'} />
       <Cachorro /> */}
-      {/* <Calculadora /> */}
+      <Calculadora />
     </>
   );
 };
 
-export default Animal;
+export default App;
