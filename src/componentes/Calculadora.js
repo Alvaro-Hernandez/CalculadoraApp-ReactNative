@@ -23,6 +23,79 @@ const Calculadora = () => {
   const limpiarResultado = () => {
     setResult('');
   };
+
+  return (
+    <View>
+      <View>
+        <Text>{result}</Text>
+      </View>
+      <View>
+        <View>
+          <TouchableOpacity onPress={() => handleButtonPress('7')}>
+            <Text> 7 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('8')}>
+            <Text> 8 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('9')}>
+            <Text> 9 </Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => handleButtonPress('4')}>
+            <Text> 4 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('5')}>
+            <Text> 5 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('6')}>
+            <Text> 6 </Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => handleButtonPress('1')}>
+            <Text> 1 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('2')}>
+            <Text> 2 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('3')}>
+            <Text> 3 </Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => handleButtonPress('0')}>
+            <Text> 0 </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('.')}>
+            <Text> . </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={calcularResultado}>
+            <Text> = </Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => handleButtonPress('+')}>
+            <Text> + </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('-')}>
+            <Text> - </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => handleButtonPress('*')}>
+            <Text> * </Text>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => handleButtonPress('/')}>
+            <Text> / </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={limpiarResultado}>
+            <Text> C </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
 };
 const style = StyleSheet.create({
   container: {
