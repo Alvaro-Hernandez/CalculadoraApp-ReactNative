@@ -24,5 +24,40 @@ const Calculadora = () => {
     setResult('');
   };
 };
-
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignContent: 'center',
+  },
+  resultContainer: {
+    marginBottom: 20,
+  },
+  resultText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  buttonContainer: {
+    width: 300,
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+  button: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#800080',
+    padding: 10,
+    borderRadius: 5,
+    margin: 4,
+  },
+  buttonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+});
 export default Calculadora;
