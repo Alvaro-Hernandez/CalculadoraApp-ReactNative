@@ -6,6 +6,10 @@ const math = create(all);
 
 const Calculadora = () => {
   const [result, setResult] = useState('');
+
+  const handleButtonPress = value => {
+    setResult(result + value);
+  };
 };
 
 export default Calculadora;
